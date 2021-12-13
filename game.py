@@ -1,13 +1,14 @@
-from random import randit
+from random import randint
 # randint(a,b) --> a<=N<=break
 
-randVal = randit.randint(0, 100)
+randVal = randint(0, 100)
 
 while(True):
-    guess = int(input("Please enter your guess"))
+    guess = int(input("Please enter your guess: "))
     if guess == randVal:
         break
     elif guess < randVal:
-        print("Your guess was too low")
+        print("Your guess was too low...")
     else:
-        print("Your guess was too high")
+        print("Your guess was too high...")
+print("You guessed correctly!!")
